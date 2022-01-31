@@ -1,8 +1,11 @@
+using WeatherApi;
+
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddSingleton<DatabaseService>();
 
 // Request pipeline
 var app = builder.Build();

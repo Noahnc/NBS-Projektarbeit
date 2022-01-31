@@ -3,30 +3,24 @@ using Microsoft.AspNetCore.Mvc;
 namespace WeatherApi.Controllers;
 
 [ApiController]
-[Route("[controller]")]
+[Route("api/[controller]")]
 public class WeatherForecastController : ControllerBase
 {
-    private static readonly string[] Summaries = new[]
+    private Random _random = new Random();
+    private readonly DatabaseService _databaseService;
+    private string[] _weathers =
     {
-        "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
+        "Sunny", "Cloudy", "Rainy", "Snowy", "Stormy"
     };
 
-    private readonly ILogger<WeatherForecastController> _logger;
-
-    public WeatherForecastController(ILogger<WeatherForecastController> logger)
+    public WeatherForecastController(DatabaseService databaseService)
     {
-        _logger = logger;
+        _databaseService = databaseService;
     }
-
-    [HttpGet(Name = "GetWeatherForecast")]
-    public IEnumerable<WeatherForecast> Get()
+    
+    [HttpGet("weather")]
+    public IActionResult Get(int limit)
     {
-        return Enumerable.Range(1, 5).Select(index => new WeatherForecast
-        {
-            Date = DateTime.Now.AddDays(index),
-            TemperatureC = Random.Shared.Next(-20, 55),
-            Summary = Summaries[Random.Shared.Next(Summaries.Length)]
-        })
-        .ToArray();
+        return Ok(_databaseService.GetData(limit));
     }
 }
