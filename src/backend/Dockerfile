@@ -1,21 +1,17 @@
 # syntax=docker/dockerfile:1
-FROM ubuntu:latest
+FROM mcr.microsoft.com/dotnet/sdk:6.0-bullseye-slim-arm64v8 AS build-env
 
-# Installing dependencies
-RUN sudo apt update & apt install python -y
-RUN sudo apt install python3-pip -y
-RUN sudo pip install -U Flask
+WORKDIR /app
 
-WORKDIR /usr/sbin
+# Copy csproj and restore as distinct layers
+COPY . .
+RUN dotnet restore
 
-RUN mkdir NBS_Project_Backend
+# Copy everything else and build
+RUN dotnet publish -c Release -o out
 
-WORKDIR /usr/sbin/NBS_Project_Backend
-
-COPY src/ ./
-
-# expose Port 80 for RESTfull API requests
-EXPOSE 80
-
-# check container health on port 80
-HEALTHCHECK CMD curl --fail http://localhost:80 || exit 1
+# Build runtime image
+FROM mcr.microsoft.com/dotnet/aspnet:6.0
+WORKDIR /app
+COPY --from=build-env /app/out .
+ENTRYPOINT ["dotnet", "WeatherApi.dll"]
