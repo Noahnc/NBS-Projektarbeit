@@ -6,15 +6,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a36b8eb-357c-4773-abc8-951d42f4ef41" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WeatherApi/DatabaseService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/WeatherApi/WeatherData.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherApi/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApi/Controllers/WeatherForecastController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/Controllers/WeatherForecastController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApi/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApi/WeatherApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/WeatherApi.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.csproj.AssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/WeatherApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/project.packagespec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/../frontend/src/app/app.component.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -28,10 +22,6 @@
       <filtered-out-file-type name="TAG" />
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
-  </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/1ac3bf8d279e4572a77c8002c0c830f1171c00/8e/a3383b62/MySqlCommand.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3444aea72fd552a5be14e6c6d1bb43569412a5547ca7f0b93136753e44471e5c/CallSiteRuntimeResolver.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -90,6 +80,7 @@
       <updated>1643637262608</updated>
       <workItem from="1643637268613" duration="1000" />
       <workItem from="1643637355989" duration="2640000" />
+      <workItem from="1643653788127" duration="104000" />
     </task>
     <servers />
   </component>
@@ -97,7 +88,7 @@
     <option name="version" value="3" />
   </component>
   <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -119,27 +110,13 @@
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WeatherApi/DatabaseService.cs</url>
           <line>14</line>
-          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="14" containingFunctionPresentation="constructor 'DatabaseService'">
-            <startOffsets>
-              <option value="380" />
-            </startOffsets>
-            <endOffsets>
-              <option value="381" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="14" containingFunctionPresentation="constructor 'DatabaseService'" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/WeatherApi/DatabaseService.cs</url>
           <line>20</line>
-          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="20" containingFunctionPresentation="method 'GetData'">
-            <startOffsets>
-              <option value="591" />
-            </startOffsets>
-            <endOffsets>
-              <option value="592" />
-            </endOffsets>
-          </properties>
+          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="20" containingFunctionPresentation="method 'GetData'" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
