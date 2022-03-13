@@ -1,4 +1,10 @@
 #mainContent {
   width: 80%;
   margin: 50px auto auto;
+  height: calc(100% - 180px);
+}
+
+.chartContainer {
+  height: 100%;
+  width: 100%;
 }

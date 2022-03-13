@@ -4,6 +4,11 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatToolbarModule} from "@angular/material/toolbar";
 import {WeatherapiService} from "../services/weatherapi.service";
+import {MatInputModule} from "@angular/material/input";
+import {FormsModule} from "@angular/forms";
+import {NgxChartsModule} from "@swimlane/ngx-charts";
+import {HttpClientModule} from "@angular/common/http";
+import {MatIconModule} from "@angular/material/icon";
 
 @NgModule({
   declarations: [
@@ -12,7 +17,12 @@ import {WeatherapiService} from "../services/weatherapi.service";
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatInputModule,
+    FormsModule,
+    NgxChartsModule,
+    HttpClientModule,
+    MatIconModule
   ],
   providers: [ WeatherapiService ],
   bootstrap: [AppComponent]

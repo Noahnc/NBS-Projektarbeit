@@ -2,7 +2,24 @@
   <span>Weather UI</span>
 </mat-toolbar>
 <div id="mainContent">
-  <p>Das wird unsere API Sein</p>
-  <p *ngIf="weatherData">{{weatherData.place}}</p>
-</div>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Anzahl Daten</mat-label>
+    <input #filetInput matInput maxlength="10" [(ngModel)]="filter">
+    <mat-icon (click)="_loadData()" matSuffix>refresh</mat-icon>
+    <mat-hint align="end">{{filetInput.value.length}} / 10</mat-hint>
+  </mat-form-field>
 
+  <div class="chartContainer">
+    <ngx-charts-line-chart *ngIf="chartData"
+                           [results]="chartData"
+                           [legend]="legend"
+                           [showXAxisLabel]="false"
+                           [showYAxisLabel]="false"
+                           [xAxis]="false"
+                           [yAxis]="true"
+                           [xAxisLabel]="'Test'"
+                           [yAxisLabel]="'Test2'"
+                           [timeline]="timeline">
+    </ngx-charts-line-chart>
+  </div>
+</div>
