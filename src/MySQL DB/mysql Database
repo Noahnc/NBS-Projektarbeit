@@ -1,0 +1,22 @@
+
+CREATE DATABASE WeatherData;
+
+create table messwerte(
+    id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+    timedate TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    temp FLOAT NOT NULL,
+    humidity FLOAT NOT NULL,
+);
+
+CREATE USER 'backend'@'*' IDENTIFIED BY 'jdfnj7H47hrh!';
+GRANT ALL PRIVILEGES ON WeatherData.* TO 'backend'@'*';
+
+
+INSERT INTO messwerte (temp, humidity)
+VALUES (21.23, 35.72);
+
+
+
+
+
+
