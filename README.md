@@ -1,3 +1,3 @@
 # NBS-Projektarbeit
 
-In dieser Repo ist sämtlicher Source Code des Projekts watherapi des Fachs NBS. 
+In dieser Repo sind alle Componenten des Projekts "weatherapi" enthalten, welches als Projektarbeit für das Fach "Netzwerkbetriebssysteme".
