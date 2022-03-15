@@ -1,3 +1,4 @@
+using System.Data;
 using MySql.Data.MySqlClient;
 
 namespace WeatherApi;
@@ -19,6 +20,7 @@ public class DatabaseService
 
     public WeatherData[] GetData(int limit)
     {
+        HandleDBDisconnect();
         var list = new List<WeatherData>();
         
         var cmd = new MySqlCommand($"SELECT * from messwerte LIMIT {limit}", _mySqlConnection);
@@ -36,4 +38,19 @@ public class DatabaseService
 
         return list.ToArray();
     }
+
+    private void HandleDBDisconnect()
+    {
+        switch (_mySqlConnection.State)
+        {
+            case ConnectionState.Broken:
+                _mySqlConnection.Close();
+                _mySqlConnection.Open();
+                break;
+            case ConnectionState.Closed:
+                _mySqlConnection.Open();
+                break;
+        }
+    }
+    
 }

@@ -6,9 +6,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a36b8eb-357c-4773-abc8-951d42f4ef41" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.GeneratedMSBuildEditorConfig.editorconfig" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.GeneratedMSBuildEditorConfig.editorconfig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.csproj.AssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/Debug/net6.0/WeatherApi.csproj.AssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/WeatherApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/obj/project.packagespec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.WeatherApi/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.WeatherApi/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/WeatherApi/DatabaseService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/WeatherApi/DatabaseService.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -81,6 +80,7 @@
       <workItem from="1643637268613" duration="1000" />
       <workItem from="1643637355989" duration="2640000" />
       <workItem from="1643653788127" duration="104000" />
+      <workItem from="1647379410431" duration="634000" />
     </task>
     <servers />
   </component>
@@ -103,23 +103,5 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WeatherApi/DatabaseService.cs</url>
-          <line>14</line>
-          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="14" containingFunctionPresentation="constructor 'DatabaseService'" />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DotNet Breakpoints">
-          <url>file://$PROJECT_DIR$/WeatherApi/DatabaseService.cs</url>
-          <line>20</line>
-          <properties documentPath="C:\Users\bursa\Documents\GitHub\NBS-Projektarbeit\src\backend\WeatherApi\DatabaseService.cs" initialLine="20" containingFunctionPresentation="method 'GetData'" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
